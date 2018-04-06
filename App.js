@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, Modal, Button, Alert} from 'react-native';
+import { StyleSheet, Text, View, Button, Alert} from 'react-native';
+import Modal from "react-native-modal";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -26,7 +27,7 @@ export default class App extends React.Component {
         <Modal
           animationType="slide"
           transparent={false}
-          visible={this.state.open}
+          isVisible={this.state.open}
 
         >
           <View style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%', backgroundColor: 'palevioletred' }}>
